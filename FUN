@@ -108,8 +108,9 @@ label28 = ct.CTkLabel(root,text="hecbirsey almamisiniz",fg_color="#FF0000",bg_co
 label29 = ct.CTkLabel(root,text="",bg_color="blue")
 
 
-# not: configure customtkinter da duzgun isdeyir oyuzden bunu oyreni yazdim
+# not: configure customtkinter da duzgun isdeyir oyuzden bunu reni yazdim
 
+# not: round 1.3455666 -1.34 eliyir
 
 netice = 0.0
 fuel_total = 0.0

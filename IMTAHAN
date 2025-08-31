@@ -1,0 +1,79 @@
+from tkinter import ttk
+from tkinter import *
+import customtkinter as ct
+import customtkinter as ctk
+from fun import *
+
+ct.set_appearance_mode("dark")
+ct.set_default_color_theme("blue")
+
+root = ct.CTk()
+root.title("bestoil")
+root.geometry("700x500")
+root.config(bg="#0004FF")
+
+
+
+
+label1 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label1.place(relx=0.02,rely=0.02,relwidth=0.45,relheight=0.45)
+
+label2 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label2.place(relx=0.53,rely=0.02,relwidth=0.45,relheight=0.45)
+
+label3 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label3.place(relx=0.02,rely=0.50,relwidth=0.45,relheight=0.25)
+
+label4 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label4.place(relx=0.53,rely=0.50,relwidth=0.45,relheight=0.25)
+
+label5 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label5.place(relx=0.02,rely=0.77,relwidth=0.96,relheight=0.25)
+
+
+
+check_var1 = ct.StringVar(value="off")
+checkbox1 = ct.CTkCheckBox(root, text="Hot dog", command=checkbox_event1,variable=check_var1, onvalue="on", offvalue="off")
+checkbox1.place(relx=0.60,rely=0.1,relwidth=0.15,relheight=0.05)
+
+check_var2 = ct.StringVar(value="off")
+checkbox2 = ct.CTkCheckBox(root, text="Pizza", command=checkbox_event1,variable=check_var2, onvalue="on", offvalue="off")
+checkbox2.place(relx=0.60,rely=0.15,relwidth=0.15,relheight=0.05)
+
+check_var3 = ct.StringVar(value="off")
+checkbox3 = ct.CTkCheckBox(root, text="Hamburger", command=checkbox_event1,variable=check_var3, onvalue="on", offvalue="off")
+checkbox3.place(relx=0.60,rely=0.2,relwidth=0.15,relheight=0.05)
+
+check_var4 = ct.StringVar(value="off")
+checkbox4 = ct.CTkCheckBox(root, text="French", command=checkbox_event1,variable=check_var4, onvalue="on", offvalue="off")
+checkbox4.place(relx=0.60,rely=0.25,relwidth=0.15,relheight=0.05)
+
+check_var5 = ct.StringVar(value="off")
+checkbox5 = ct.CTkCheckBox(root, text="Fanta", command=checkbox_event1,variable=check_var5, onvalue="on", offvalue="off")
+checkbox5.place(relx=0.60,rely=0.3,relwidth=0.15,relheight=0.05)
+
+check_var6 = ct.StringVar(value="off")
+checkbox6 = ct.CTkCheckBox(root, text="Coca-cola", command=checkbox_event1,variable=check_var6, onvalue="on", offvalue="off")
+checkbox6.place(relx=0.60,rely=0.35,relwidth=0.15,relheight=0.05)
+
+
+
+
+button1 = ct.CTkButton(root,text="Card",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),corner_radius=15,command=card)
+
+
+button2 = ct.CTkButton(root,text="Cash",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),corner_radius=15,command=cash)
+
+
+button3 = ct.CTkButton(root,text="accept",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),command=bezin)
+button3.place(relx=0.15,rely=0.63,relwidth=0.2,relheight=0.1)
+
+button4 = ct.CTkButton(root,text="accept",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),command=checkbox_event1)
+button4.place(relx=0.65,rely=0.63,relwidth=0.2,relheight=0.1)
+
+button5 = ct.CTkButton(root,text="Buy",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),command=buy)
+button5.place(relx=0.4,rely=0.85,relwidth=0.2,relheight=0.1)
+
+
+
+root.mainloop()

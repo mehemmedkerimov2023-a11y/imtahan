@@ -1,0 +1,366 @@
+from tkinter import ttk
+from tkinter import *
+import customtkinter as ct
+import customtkinter as ctk
+
+ct.set_appearance_mode("dark")
+ct.set_default_color_theme("blue")
+
+root = ct.CTk()
+root.title("bestoil")
+root.geometry("700x500")
+root.config(bg="#0004FF")
+
+
+
+
+label1 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label1.place(relx=0.02,rely=0.02,relwidth=0.45,relheight=0.45)
+
+label2 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label2.place(relx=0.53,rely=0.02,relwidth=0.45,relheight=0.45)
+
+label3 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label3.place(relx=0.02,rely=0.50,relwidth=0.45,relheight=0.25)
+
+label4 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label4.place(relx=0.53,rely=0.50,relwidth=0.45,relheight=0.25)
+
+label5 = ct.CTkLabel(root,text ="",bg_color="#4A4A4A",corner_radius=15)
+label5.place(relx=0.02,rely=0.77,relwidth=0.96,relheight=0.25)
+
+label6= ct.CTkLabel(root,text ="mini-cafe",bg_color="#4A4A4A",fg_color="#4A4A4A",corner_radius=3)
+label6.place(relx=0.53,rely=0.02,relwidth=0.1,relheight=0.05)
+
+label7= ct.CTkLabel(root,text ="fuel station",bg_color="#4A4A4A",fg_color="#4A4A4A",corner_radius=3)
+label7.place(relx=0.02,rely=0.02,relwidth=0.1,relheight=0.05)
+
+label8= ct.CTkLabel(root,text ="to pay",bg_color="#4A4A4A",fg_color="#4A4A4A",corner_radius=3)
+label8.place(relx=0.02,rely=0.50,relwidth=0.1,relheight=0.05)
+
+label9= ct.CTkLabel(root,text ="to pay",bg_color="#4A4A4A",fg_color="#4A4A4A",corner_radius=3)
+label9.place(relx=0.53,rely=0.50,relwidth=0.1,relheight=0.05)
+
+label10= ct.CTkLabel(root,text ="TOTAL to pay",bg_color="#4A4A4A",fg_color="#4A4A4A",font=("Arial",10),corner_radius=3)
+label10.place(relx=0.03,rely=0.77,relwidth=0.1,relheight=0.05)
+
+label11= ct.CTkLabel(root,text ="4,50 ₼",bg_color="#4A4A4A",fg_color="#FF0000")
+label11.place(relx=0.75,rely=0.1,relwidth=0.1,relheight=0.05)
+
+label12= ct.CTkLabel(root,text ="12 ₼",bg_color="#4A4A4A",fg_color="#FF0000")
+label12.place(relx=0.75,rely=0.15,relwidth=0.1,relheight=0.05)
+
+label13= ct.CTkLabel(root,text ="6 ₼",bg_color="#4A4A4A",fg_color="#FF0000")
+label13.place(relx=0.75,rely=0.2,relwidth=0.1,relheight=0.05)
+
+label14= ct.CTkLabel(root,text ="3 ₼",bg_color="#4A4A4A",fg_color="#FF0000")
+label14.place(relx=0.75,rely=0.25,relwidth=0.1,relheight=0.05)
+
+label15= ct.CTkLabel(root,text ="1,80 ₼",bg_color="#4A4A4A",fg_color="#FF0000")
+label15.place(relx=0.75,rely=0.3,relwidth=0.1,relheight=0.05)
+
+label16= ct.CTkLabel(root,text ="1,80 ₼",bg_color="#4A4A4A",fg_color="#FF0000")
+label16.place(relx=0.75,rely=0.35,relwidth=0.1,relheight=0.05)
+
+label17= ct.CTkLabel(root,text ="Price",bg_color="#4A4A4A",fg_color="#000000",corner_radius=3)
+label17.place(relx=0.75,rely=0.05,relwidth=0.1,relheight=0.05)
+
+label18= ct.CTkLabel(root,text ="Qty",bg_color="#4A4A4A",fg_color="#000000",corner_radius=3)
+label18.place(relx=0.85,rely=0.05,relwidth=0.1,relheight=0.05)
+
+label19= ct.CTkLabel(root,text ="Petrol",bg_color="#4A4A4A",fg_color="#FF0000",font=("Arial",15),corner_radius=15)
+label19.place(relx=0.1,rely=0.08,relwidth=0.1,relheight=0.05)
+
+label20= ct.CTkLabel(root,text ="Price",bg_color="#4A4A4A",fg_color="#FF0000",font=("Arial",15),corner_radius=15)
+label20.place(relx=0.1,rely=0.18,relwidth=0.1,relheight=0.05)
+
+label21= ct.CTkLabel(root,text ="Quantity",bg_color="#4A4A4A",fg_color="#FF0000",font=("Arial",11),corner_radius=15)
+label21.place(relx=0.1,rely=0.28,relwidth=0.1,relheight=0.05)
+
+label22= ct.CTkLabel(root,text ="To pay",bg_color="#4A4A4A",fg_color="#FF0000",font=("Arial",15),corner_radius=15)
+label22.place(relx=0.1,rely=0.38,relwidth=0.1,relheight=0.05)
+
+label23 = ct.CTkLabel(root, text="Quantity elave edin", bg_color="#4A4A4A", fg_color="#000000", corner_radius=2)
+
+
+label24= ct.CTkLabel(root,text ="or",bg_color="#4A4A4A",font=("Arial",20),corner_radius=15)
+label24.place(relx=0.4,rely=0.85,relwidth=0.2,relheight=0.1)
+
+
+
+labeltopay1= ct.CTkLabel(root,text =0.0 ,bg_color="#4A4A4A",font=("Arial",20),corner_radius=15)
+labeltopay1.place(relx=0.15,rely=0.53,relwidth=0.2,relheight=0.1)
+
+labeltopay2= ct.CTkLabel(root,text =0.0 ,bg_color="#4A4A4A",font=("Arial",20),corner_radius=15)
+labeltopay2.place(relx=0.65,rely=0.53,relwidth=0.2,relheight=0.1)
+
+label25= ct.CTkLabel(root,text ="",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),corner_radius=5)
+label25.place(relx=0.25,rely=0.38,relwidth=0.1,relheight=0.05)
+
+
+
+
+label26 = ct.CTkLabel(root, text="", bg_color="#4A4A4A", fg_color="#000000",corner_radius=5)
+label26.place(relx=0.2, rely=0.18, relwidth=0.2, relheight=0.05)
+
+label28 = ct.CTkLabel(root,text="hecbirsey almamisiniz",fg_color="#FF0000",bg_color="#4A4A4A",corner_radius=15)
+
+label29 = ct.CTkLabel(root,text="",bg_color="blue")
+
+
+# not: configure customtkinter da duzgun isdeyir oyuzden bunu oyreni yazdim
+
+
+netice = 0.0
+fuel_total = 0.0
+
+# Fuel calculation function
+def bezin():
+    global fuel_total
+    text = combobox.get()
+    text1 = entry7.get()
+    
+    if text == "92":
+        label26.configure(text="1.10")
+        if text1 != "":
+            try:
+                fuel_total = round(1.10 * float(text1), 2)
+                label25.configure(text=f"{fuel_total}")
+                labeltopay1.configure(text=f"{fuel_total}")
+                # Hide error message
+                label23.place_forget()
+            except ValueError:
+                label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
+        else:
+            label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
+
+    elif text == "95":
+        label26.configure(text="1.00")
+        if text1 != "":
+            try:
+                fuel_total = round(1.00 * float(text1), 2)
+                label25.configure(text=f"{fuel_total}")
+                labeltopay1.configure(text=f"{fuel_total}")
+                # Hide error message
+                label23.place_forget()
+            except ValueError:
+                label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
+        else:
+            label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
+            
+    elif text.lower() == "premium":
+        label26.configure(text="1.60")
+        if text1 != "":
+            try:
+                fuel_total = round(1.60 * float(text1), 2)
+                label25.configure(text=f"{fuel_total}")
+                labeltopay1.configure(text=f"{fuel_total}")
+                # Hide error message
+                label23.place_forget()
+            except ValueError:
+                label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
+        else:
+            label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
+    else:
+        label26.configure(text="")
+        fuel_total = 0.0
+        label25.configure(text="")
+        labeltopay1.configure(text="0.0")
+
+
+def checkbox_event1():
+    global netice
+    netice = 0.0
+
+    # Hoy dog
+    text1 = checkbox1.get()
+    text2 = entry1.get()
+    if text1 == "on" and text2 != "" and text2.isdigit():
+        netice += 4.50 * int(text2)
+
+    # Pizza
+    text1 = checkbox2.get()
+    text2 = entry2.get()
+    if text1 == "on" and text2 != "" and text2.isdigit():
+        netice += 12.00 * int(text2)
+
+    # Hamburger
+    text1 = checkbox3.get()
+    text2 = entry3.get()
+    if text1 == "on" and text2 != "" and text2.isdigit():
+        netice += 6.00 * int(text2)
+
+    # French
+    text1 = checkbox4.get()
+    text2 = entry4.get()
+    if text1 == "on" and text2 != "" and text2.isdigit():
+        netice += 3.00 * int(text2)
+
+    # Fanta
+    text1 = checkbox5.get()
+    text2 = entry5.get()
+    if text1 == "on" and text2 != "" and text2.isdigit():
+        netice += 1.80 * int(text2)
+
+    # Coca-cola
+    text1 = checkbox6.get()
+    text2 = entry6.get()
+    if text1 == "on" and text2 != "" and text2.isdigit():
+        netice += 1.80 * int(text2)
+
+
+    labeltopay2.configure(text=f"{netice}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+check_var1 = ct.StringVar(value="off")
+checkbox1 = ct.CTkCheckBox(root, text="Hot dog", command=checkbox_event1,variable=check_var1, onvalue="on", offvalue="off")
+checkbox1.place(relx=0.60,rely=0.1,relwidth=0.15,relheight=0.05)
+
+check_var2 = ct.StringVar(value="off")
+checkbox2 = ct.CTkCheckBox(root, text="Pizza", command=checkbox_event1,variable=check_var2, onvalue="on", offvalue="off")
+checkbox2.place(relx=0.60,rely=0.15,relwidth=0.15,relheight=0.05)
+
+check_var3 = ct.StringVar(value="off")
+checkbox3 = ct.CTkCheckBox(root, text="Hamburger", command=checkbox_event1,variable=check_var3, onvalue="on", offvalue="off")
+checkbox3.place(relx=0.60,rely=0.2,relwidth=0.15,relheight=0.05)
+
+check_var4 = ct.StringVar(value="off")
+checkbox4 = ct.CTkCheckBox(root, text="French", command=checkbox_event1,variable=check_var4, onvalue="on", offvalue="off")
+checkbox4.place(relx=0.60,rely=0.25,relwidth=0.15,relheight=0.05)
+
+check_var5 = ct.StringVar(value="off")
+checkbox5 = ct.CTkCheckBox(root, text="Fanta", command=checkbox_event1,variable=check_var5, onvalue="on", offvalue="off")
+checkbox5.place(relx=0.60,rely=0.3,relwidth=0.15,relheight=0.05)
+
+check_var6 = ct.StringVar(value="off")
+checkbox6 = ct.CTkCheckBox(root, text="Coca-cola", command=checkbox_event1,variable=check_var6, onvalue="on", offvalue="off")
+checkbox6.place(relx=0.60,rely=0.35,relwidth=0.15,relheight=0.05)
+
+
+
+def buy():
+    global netice, fuel_total
+    total = fuel_total + netice
+    if total > 0:
+        # Show payment options
+        button1.place(relx=0.2,rely=0.85,relwidth=0.2,relheight=0.1)
+        button2.place(relx=0.6,rely=0.85,relwidth=0.2,relheight=0.1)
+        # Hide the "or" label and Buy button
+        label24.place(relx=0.4,rely=0.85,relwidth=0.2,relheight=0.1)
+        button5.place_forget()
+        # Hide error message if shown
+        label28.place_forget()
+        
+    else:
+        label28.place(relx=0.375,rely=0.78,relwidth=0.25,relheight=0.05)
+
+def sagolun():
+    label31.configure(text="sagolun")
+    button6.destroy()
+    button7.destroy()
+    
+def back():
+    label31.destroy()
+    button6.destroy()
+    label30.destroy()
+    button7.destroy()
+
+
+def card():
+    global label31
+    global button6
+    global label30
+    global button7
+    label30 = ct.CTkLabel(root,text="",bg_color="#4A4A4A")
+    label30.place(relx=0.02,rely=0.77,relwidth=0.96,relheight=0.25)
+    label31 = ct.CTkLabel(root,text=f"borcunuz {netice + fuel_total}",bg_color="#4A4A4A",fg_color="red",corner_radius=15)
+    label31.place(relx=0.4,rely=0.78,relwidth=0.2,relheight=0.1)
+    button6 = ct.CTkButton(root,text="card la ödə",bg_color="#4A4A4A",fg_color="black",font=("Arial",20),corner_radius=10,command=sagolun)
+    button6.place(relx=0.4,rely=0.90,relwidth=0.2,relheight=0.1) 
+    button7 = ct.CTkButton(root,text="Back",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",15),command=back)
+    button7.place(relx=0.02,rely=0.77,relwidth=0.1,relheight=0.05)
+
+
+def cash():
+    global label31
+    global button6
+    global label30
+    global button7
+    label30 = ct.CTkLabel(root,text="",bg_color="#4A4A4A")
+    label30.place(relx=0.02,rely=0.77,relwidth=0.96,relheight=0.25)
+    label31 = ct.CTkLabel(root,text=f"borcunuz {netice + fuel_total}",bg_color="#4A4A4A",fg_color="red",corner_radius=15)
+    label31.place(relx=0.4,rely=0.78,relwidth=0.2,relheight=0.1)
+    button6 = ct.CTkButton(root,text="cash la ödə",bg_color="#4A4A4A",fg_color="black",font=("Arial",20),corner_radius=10,command=sagolun)
+    button6.place(relx=0.4,rely=0.90,relwidth=0.2,relheight=0.1) 
+    button7 = ct.CTkButton(root,text="Back",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",15),command=back)
+    button7.place(relx=0.02,rely=0.77,relwidth=0.1,relheight=0.05)
+
+
+
+
+
+
+
+ 
+
+button1 = ct.CTkButton(root,text="Card",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),corner_radius=15,command=card)
+
+
+button2 = ct.CTkButton(root,text="Cash",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),corner_radius=15,command=cash)
+
+
+button3 = ct.CTkButton(root,text="accept",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),command=bezin)
+button3.place(relx=0.15,rely=0.63,relwidth=0.2,relheight=0.1)
+
+button4 = ct.CTkButton(root,text="accept",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),command=checkbox_event1)
+button4.place(relx=0.65,rely=0.63,relwidth=0.2,relheight=0.1)
+
+button5 = ct.CTkButton(root,text="Buy",bg_color="#4A4A4A",fg_color="#000000",font=("Arial",20),command=buy)
+button5.place(relx=0.4,rely=0.85,relwidth=0.2,relheight=0.1)
+
+
+
+
+
+entry1 = ct.CTkEntry(root, bg_color="#4A4A4A",fg_color="#000000")
+entry1.place(relx=0.85,rely=0.1,relwidth=0.1,relheight=0.05)
+
+entry2 = ct.CTkEntry(root, bg_color="#4A4A4A",fg_color="#000000")
+entry2.place(relx=0.85,rely=0.15,relwidth=0.1,relheight=0.05)
+
+entry3 = ct.CTkEntry(root, bg_color="#4A4A4A",fg_color="#000000")
+entry3.place(relx=0.85,rely=0.2,relwidth=0.1,relheight=0.05)
+
+entry4 = ct.CTkEntry(root, bg_color="#4A4A4A",fg_color="#000000")
+entry4.place(relx=0.85,rely=0.25,relwidth=0.1,relheight=0.05)
+
+entry5 = ct.CTkEntry(root, bg_color="#4A4A4A",fg_color="#000000")
+entry5.place(relx=0.85,rely=0.3,relwidth=0.1,relheight=0.05)
+
+entry6 = ct.CTkEntry(root, bg_color="#4A4A4A",fg_color="#000000")
+entry6.place(relx=0.85,rely=0.35,relwidth=0.1,relheight=0.05)
+
+
+entry7= ct.CTkEntry(root,bg_color="#4A4A4A",fg_color="black",font=("Arial",20))
+entry7.place(relx=0.25,rely=0.28,relwidth=0.1,relheight=0.05)
+
+petrol = ["92","95","premium"]
+
+
+
+combobox = ct.CTkComboBox(root,values=petrol,state="readonly",bg_color="#4A4A4A",fg_color="#000000")
+combobox.place(relx=0.2 ,rely=0.08,relwidth=0.2,relheight=0.05)
+
+
+root.mainloop()

@@ -140,7 +140,7 @@ def bezin():
         else:
             label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
             
-    elif text.lower() == "premium":
+    elif text == "premium":
         label26.configure(text="1.60")
         if text1 != "":
             try:

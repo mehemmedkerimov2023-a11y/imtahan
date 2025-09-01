@@ -279,7 +279,7 @@ def card():
     global button7
     label30 = ct.CTkLabel(root,text="",bg_color="#4A4A4A")
     label30.place(relx=0.02,rely=0.77,relwidth=0.96,relheight=0.25)
-    label31 = ct.CTkLabel(root,text=f"borcunuz {netice + fuel_total}",bg_color="#4A4A4A",fg_color="red",corner_radius=15)
+    label31 = ct.CTkLabel(root,text=f"borcunuz {netice + fueltotal}",bg_color="#4A4A4A",fg_color="red",corner_radius=15)
     label31.place(relx=0.4,rely=0.78,relwidth=0.2,relheight=0.1)
     button6 = ct.CTkButton(root,text="card la ödə",bg_color="#4A4A4A",fg_color="black",font=("Arial",20),corner_radius=10,command=sagolun)
     button6.place(relx=0.4,rely=0.90,relwidth=0.2,relheight=0.1) 
@@ -294,7 +294,7 @@ def cash():
     global button7
     label30 = ct.CTkLabel(root,text="",bg_color="#4A4A4A")
     label30.place(relx=0.02,rely=0.77,relwidth=0.96,relheight=0.25)
-    label31 = ct.CTkLabel(root,text=f"borcunuz {netice + fuel_total}",bg_color="#4A4A4A",fg_color="red",corner_radius=15)
+    label31 = ct.CTkLabel(root,text=f"borcunuz {netice + fueltotal}",bg_color="#4A4A4A",fg_color="red",corner_radius=15)
     label31.place(relx=0.4,rely=0.78,relwidth=0.2,relheight=0.1)
     button6 = ct.CTkButton(root,text="cash la ödə",bg_color="#4A4A4A",fg_color="black",font=("Arial",20),corner_radius=10,command=sagolun)
     button6.place(relx=0.4,rely=0.90,relwidth=0.2,relheight=0.1) 

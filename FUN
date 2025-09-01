@@ -115,7 +115,6 @@ label29 = ct.CTkLabel(root,text="",bg_color="blue")
 netice = 0.0
 fuel_total = 0.0
 
-# Fuel calculation function
 def bezin():
     global fuel_total
     text = combobox.get()
@@ -128,7 +127,6 @@ def bezin():
                 fuel_total = round(1.10 * float(text1), 2)
                 label25.configure(text=f"{fuel_total}")
                 labeltopay1.configure(text=f"{fuel_total}")
-                # Hide error message
                 label23.place_forget()
             except ValueError:
                 label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
@@ -142,7 +140,6 @@ def bezin():
                 fuel_total = round(1.00 * float(text1), 2)
                 label25.configure(text=f"{fuel_total}")
                 labeltopay1.configure(text=f"{fuel_total}")
-                # Hide error message
                 label23.place_forget()
             except ValueError:
                 label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
@@ -156,7 +153,6 @@ def bezin():
                 fuel_total = round(1.60 * float(text1), 2)
                 label25.configure(text=f"{fuel_total}")
                 labeltopay1.configure(text=f"{fuel_total}")
-                # Hide error message
                 label23.place_forget()
             except ValueError:
                 label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
@@ -254,13 +250,10 @@ def buy():
     global netice, fuel_total
     total = fuel_total + netice
     if total > 0:
-        # Show payment options
         button1.place(relx=0.2,rely=0.85,relwidth=0.2,relheight=0.1)
         button2.place(relx=0.6,rely=0.85,relwidth=0.2,relheight=0.1)
-        # Hide the "or" label and Buy button
         label24.place(relx=0.4,rely=0.85,relwidth=0.2,relheight=0.1)
         button5.place_forget()
-        # Hide error message if shown
         label28.place_forget()
         
     else:

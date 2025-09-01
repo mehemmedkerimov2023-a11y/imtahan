@@ -113,10 +113,10 @@ label29 = ct.CTkLabel(root,text="",bg_color="blue")
 # not: round 1.3455666 -1.34 eliyir
 
 netice = 0.0
-fuel_total = 0.0
+fueltotal = 0.0
 
 def bezin():
-    global fuel_total
+    global fueltotal
     text = combobox.get()
     text1 = entry7.get()
     
@@ -124,9 +124,9 @@ def bezin():
         label26.configure(text="1.10")
         if text1 != "":
             try:
-                fuel_total = round(1.10 * float(text1), 2)
-                label25.configure(text=f"{fuel_total}")
-                labeltopay1.configure(text=f"{fuel_total}")
+                fueltotal = round(1.10 * float(text1), 2)
+                label25.configure(text=f"{fueltotal}")
+                labeltopay1.configure(text=f"{fueltotal}")
                 label23.place_forget()
             except ValueError:
                 label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
@@ -137,9 +137,9 @@ def bezin():
         label26.configure(text="1.00")
         if text1 != "":
             try:
-                fuel_total = round(1.00 * float(text1), 2)
-                label25.configure(text=f"{fuel_total}")
-                labeltopay1.configure(text=f"{fuel_total}")
+                fueltotal = round(1.00 * float(text1), 2)
+                label25.configure(text=f"{fueltotal}")
+                labeltopay1.configure(text=f"{fueltotal}")
                 label23.place_forget()
             except ValueError:
                 label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
@@ -150,9 +150,9 @@ def bezin():
         label26.configure(text="1.60")
         if text1 != "":
             try:
-                fuel_total = round(1.60 * float(text1), 2)
-                label25.configure(text=f"{fuel_total}")
-                labeltopay1.configure(text=f"{fuel_total}")
+                fueltotal = round(1.60 * float(text1), 2)
+                label25.configure(text=f"{fueltotal}")
+                labeltopay1.configure(text=f"{fueltotal}")
                 label23.place_forget()
             except ValueError:
                 label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
@@ -160,7 +160,7 @@ def bezin():
             label23.place(relx=0.2, rely=0.33, relwidth=0.2, relheight=0.05)
     else:
         label26.configure(text="")
-        fuel_total = 0.0
+        fueltotal = 0.0
         label25.configure(text="")
         labeltopay1.configure(text="0.0")
 
@@ -247,8 +247,9 @@ checkbox6.place(relx=0.60,rely=0.35,relwidth=0.15,relheight=0.05)
 
 
 def buy():
-    global netice, fuel_total
-    total = fuel_total + netice
+    global netice
+    global fueltotal
+    total = fueltotal + netice
     if total > 0:
         button1.place(relx=0.2,rely=0.85,relwidth=0.2,relheight=0.1)
         button2.place(relx=0.6,rely=0.85,relwidth=0.2,relheight=0.1)
